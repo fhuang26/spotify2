@@ -122,6 +122,9 @@ public class MediaPlayerDialogFragment extends DialogFragment {
             String title = ArtistTracksC.artist_name;
             getDialog().setTitle(title);
 
+            TextView tvAlbum = (TextView) vPlayerDialogFragment.findViewById(R.id.tvAlbum);
+            tvAlbum.setText(ArtistTracksC.ltATrack.get(pos).album.name);
+
             TextView tvTrack = (TextView) vPlayerDialogFragment.findViewById(R.id.tvTrack);
             tvTrack.setText(ArtistTracksC.ltATrack.get(pos).name);
 

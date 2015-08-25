@@ -11,19 +11,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:textSize="19dp"
-        android:id="@+id/tvTrack"
+        android:textSize="17dp"
+        android:id="@+id/tvAlbum"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/loDialogButtons" />
     <ImageView
         android:id="@+id/ivLargeImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvTrack"
-        android:layout_above="@+id/progressBar"
+        android:layout_below="@id/tvAlbum"
+        android:layout_above="@+id/tvTrack"
         android:adjustViewBounds="true"
         android:scaleType="fitXY" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textSize="17dp"
+        android:id="@+id/tvTrack"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignLeft="@+id/loDialogButtons" />
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
