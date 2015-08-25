@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textSize="19dp"
+        android:id="@+id/tvTrack"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/loDialogButtons" />
+    <ImageView
+        android:id="@+id/ivLargeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTrack"
+        android:layout_above="@+id/progressBar"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/tvStartTime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:text="0:00"
+        android:layout_above="@+id/loDialogButtons"
+        android:id="@+id/tvStartTime"
+        android:layout_alignLeft="@+id/loDialogButtons" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:text="0:30"
+        android:layout_above="@+id/loDialogButtons"
+        android:id="@+id/tvEndTime"
+        android:layout_alignRight="@+id/loDialogButtons"
+        android:layout_alignBottom="@id/tvStartTime" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loDialogButtons"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btPrev"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_weight="1" />
+    <ImageButton
+        android:id="@+id/btPause"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_weight="1" />
+    <ImageButton
+        android:id="@+id/btNext"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
+
