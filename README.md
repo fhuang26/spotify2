@@ -24,3 +24,4 @@ Spotify Streamer - stage 2
     slower operations (e.g., mediaPlayer.prepare() ), we save and restore previous
     state from ArtistTracksC, for TracksActivity and MediaPlayerDialogFragment.
     
+(5) I added album name to DialogFragment in rev 2.
